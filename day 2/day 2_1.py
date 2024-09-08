@@ -1,0 +1,5 @@
+S_Number= input("Please Enter 2_digit number : ")
+Sum = int(S_Number[0])+int(S_Number[1])
+# print(f"sum of the digits of this number = {Sum}")
+Sum = str(Sum)
+print("sum of the difits of this number = "+ Sum)
