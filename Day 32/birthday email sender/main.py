@@ -3,9 +3,10 @@ import pandas
 import random
 import datetime
 import smtplib
+import os
 
 SENDER_EMAIL = "pouryaarde@gmail.com"
-PASSWORD = "jaoomwghecxrsssj"
+PASSWORD = os.environ.get('PASSWORD')
 list_of_letters = ['letter_1.txt', 'letter_2.txt', 'letter_3.txt']
 
 

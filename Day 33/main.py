@@ -2,11 +2,11 @@ import requests
 import datetime
 import smtplib
 import time
-
+import os
 MY_LAT = 32.654629
 MY_LNG = 51.667984
 MY_EMAIL = "pouryaarde@gmail.com"
-MY_PASSWORD = "jaoomwghecxrsssj"
+MY_PASSWORD = os.environ.get('MY_PASSWORD')
 
 
 def is_iss_overhead():
@@ -43,7 +43,7 @@ def is_iss_visible():
 
 
 while True:
-    time.sleep(secs=60)
+    time.sleep(60)
     if is_iss_visible() and is_iss_overhead():
         with smtplib.SMTP('smtp.gmail.com', 587) as connection:
             connection.starttls()
