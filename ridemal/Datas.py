@@ -1,12 +1,11 @@
-
 Data = [
 
     {
-         'name': 'ronaldo',
-         'Follower': 132,
-         'info': 'footbaler',
-         'country': 'purtgal'
-     },
+        'name': 'ronaldo',
+        'Follower': 132,
+        'info': 'footbaler',
+        'country': 'purtgal'
+    },
     {
         'name': "instagram",
         'Follower': 346,
